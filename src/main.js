@@ -4,6 +4,8 @@ import router from './router'
 import ElementUI, { Message ,confirm} from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import TreeTable from 'vue-table-with-tree-grid'
+
 import axios from 'axios'
 axios.defaults.baseURL = 'http://175.27.228.178:3434/api/private/v1/'
 axios.interceptors.request.use(config => {
@@ -15,8 +17,14 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios
 
 Vue.use(ElementUI);
+
 Vue.prototype.$message = Message
+
 Vue.config.productionTip = false
+
+//注册为全局可用的组件
+Vue.component('tree-table',TreeTable)
+
 
 new Vue({
   el: '#app',

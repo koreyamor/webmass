@@ -1,13 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import HomeView from '../views/HomeView.vue'
 import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 import Users from '../components/use/Users.vue'
 import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
+import Cate from '../components/goods/Cate.vue'
+//导入全局样式表
 import '../assets/css/global.css'
+
 // import { component } from 'vue/types/umd'
 
 Vue.use(Router)
@@ -42,6 +44,10 @@ const router = new Router({
         {
           path: '/roles',
           component: Roles
+        },
+        {
+          path:'/categories',
+          component:Cate
         }
       ]
     }
