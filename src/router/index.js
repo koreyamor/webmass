@@ -7,6 +7,7 @@ import Users from '../components/use/Users.vue'
 import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
 import Cate from '../components/goods/Cate.vue'
+import Params from '../components/goods/Params.vue'
 //导入全局样式表
 import '../assets/css/global.css'
 
@@ -46,8 +47,12 @@ const router = new Router({
           component: Roles
         },
         {
-          path:'/categories',
-          component:Cate
+          path: '/categories',
+          component: Cate
+        },
+        {
+          path: '/params',
+          component: Params
         }
       ]
     }
