@@ -200,9 +200,6 @@ export default {
 
 <style lang="less" scoped>
 
-@import './timeline/timeline.css';
-@import './timeline-item/timeline-item.css';
-
 .el-cascader {
   width: 100%;
 }
